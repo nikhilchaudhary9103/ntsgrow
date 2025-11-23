@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTS Grow</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background: #fff;
+            box-shadow: 0 0 10px #0002;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .profile img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #444;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* BUTTONS */
+        .btn-group {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+            font-size: 15px;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #0057c2;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .typing {
+            font-size: 30px;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* ARTICLES */
+        .articles {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .articles h2 {
+            margin-bottom: 15px;
+        }
+
+        .article-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 8px #0001;
+        }
+
+        /* DOWNLOAD BUTTON */
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #28a745;
+            color: white;
+            border-radius: 6px;
+            font-size: 17px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .download-btn:hover {
+            background: #1d7f34;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="profile">
+            <img src="photo.png" alt="Profile">
+            <div class="title">NTS Grow</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn" onclick="window.location.href='mailto:nikhilchaudhary9103@gmail.com'">
+                Contact
+            </button>
+
+            <button class="btn" onclick="window.location.href='https://youtube.com'">
+                YouTube
+            </button>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Welcome to NTS Grow</h1>
+        <div class="typing">Learn: <span id="changing"></span></div>
+    </div>
+
+    <!-- ARTICLES -->
+    <div class="articles">
+        <h2>Your Articles</h2>
+
+        <div class="article-box">
+            <h3>Sample Article Title</h3>
+            <p>Coding — पूरी, गहराई वाली औरदमदार गाइड (बड़ा, ज़रूरी, और प्रैक्टिकल)
+
+ठीक है भाई — ये रही एक बड़ी और important article जो coding की सारी जरूरी बातें एकदम साफ़-साफ़ बताती है. पढ़ो, टिक करके लागू करो, और अपने सवाल सीधा पूछ देना अगर आगे कुछ चाहिए।
+
+1) परिचय: क्यों कोडिंग सीखनी चाहिए?
+
+दुनिया सॉफ़्टवेयर चलाती है — apps, websites, devices, automations.
+
+कोडिंग सिर्फ नौकरी नहीं, problem-solving का तरीका है.
+
+सीख कर तुम automation, entrepreneurship, research, या creative projects कर सकते हो.
+
+2) कोडिंग का बुनियादी ढांचा (Concepts)
+
+डेटा और डेटा स्ट्रक्चर
+
+Primitive types: numbers, strings, booleans.
+
+Collections: arrays/lists, dictionaries/maps, sets.
+
+Trees, Graphs, Stacks, Queues, Linked Lists — practical problems में काम आते हैं.
+
+Algorithms
+
+Sorting (QuickSort, MergeSort), Searching (binary search).
+
+Greedy, Dynamic Programming, BFS/DFS (graphs).
+
+Time complexity (Big-O) और space complexity समझना ज़रूरी है.
+
+Programming Paradigms
+
+Procedural, Object-Oriented (classes/objects), Functional (pure functions, immutability).
+
+हर language कुछ अलग तरीके से emphasize करती है.
+
+Software Design Principles
+
+SOLID principles, DRY (Don't Repeat Yourself), KISS (Keep It Simple).
+
+Separation of concerns, modular design, interfaces/abstraction.
+
+Version Control
+
+Git: commit, branch, merge, rebase, pull request — daily use में।
+
+Remote: GitHub/GitLab/Bitbucket.
+
+Databases
+
+Relational (SQL): schemas, joins, transactions.
+
+NoSQL (MongoDB, Redis): documents, key-value, when to use.
+
+Networking & Web Basics
+
+HTTP(S), REST, status codes, headers, cookies, CORS.
+
+Web sockets for real-time communication.
+
+Security Basics
+
+Input validation, SQL injection, XSS, authentication vs authorization.
+
+Hashing passwords, HTTPS, use libraries, avoid home-grown crypto.
+
+3) किस भाषा से शुरू करें? (Roadmap — beginner → pro)
+
+Absolute beginner: Python — syntax clean, huge community, beginner-friendly projects.
+
+Web dev: HTML + CSS → JavaScript → React/Vue → Node.js (backend) → databases.
+
+Mobile: Kotlin/Java (Android), Swift (iOS), या Flutter (Dart) for cross-platform.
+
+Systems / Performance: C, C++ (OS, games, high-perf).
+
+Data Science / ML: Python (NumPy, Pandas, Scikit-learn, TensorFlow/PyTorch).
+
+Cybersecurity / Hacking: Python/bash + networking + Linux fundamentals.
+
+Embedded / IoT: C/C++, microcontrollers (Arduino), electronics basics.
+
+सुझाव: पहली भाषा समझने के बाद दूसरी भाषा सीखना बहुत आसान होता है — concepts transferable होते हैं.
+
+4) कैसे पढ़ो — सीखने का ठोस प्लान (12-18 months roadmap)
+
+पहला 0–3 महीने (Basics):
+
+Syntax, variables, control flow (if/for/while), functions.
+
+छोटे प्रोजेक्ट्स: TODO app (console), calculator, number guessing game.
+
+3–6 महीने (Intermediate):
+
+Data structures & basic algorithms.
+
+Projects: CRUD app with simple database, personal website, REST API.
+
+Git basics, deploy a small site (GitHub Pages, Vercel).
+
+6–12 महीने (Advanced beginner → intermediate):
+
+Frameworks (React / Django / Express).
+
+Real projects: chat app, blog with authentication, simple ecommerce prototype.
+
+Read and contribute to open-source issues (small fixes).
+
+12–18 महीने (Job-ready / deepening):
+
+System design basics, testing (unit/integration), CI/CD pipelines.
+
+Competitive programming practice (optional, helps problem-solving).
+
+Prepare resume, GitHub portfolio, mock interviews.
+
+5) Practical Projects (importance order)
+
+Portfolio website — shows projects, resume, contact.
+
+TODO app with backend — authentication, database, REST.
+
+Chat app (WebSocket) — realtime features.
+
+Ecommerce mini-site — product listing, cart, checkout (simulate payments).
+
+Automation scripts — web scraping, email automation, file organizers.
+
+Open-source contribution — bugfixes, docs — credibility booster.
+
+6) Daily & Weekly habit loop (what actually works)
+
+Daily (30–60 min): coding practice — bugfix or small feature.
+
+Weekly (2–4 hours): finish a small project milestone.
+
+Monthly: read a book chapter, deploy something new, push to GitHub.
+
+Always: write small notes; if stuck, search docs > StackOverflow > try experiments.
+
+7) Tools & Environment (practical)
+
+Editor: VSCode (extensions: Prettier, ESLint, Python).
+
+Terminal basics: ssh, scp, tar, grep, sed.
+
+Containers: Docker (basic) — helps test deployments locally.
+
+Databases: Postgres for SQL, MongoDB for NoSQL.
+
+Cloud: free-tier for testing (Heroku, Vercel, Netlify, Railway).</p>
+        </div>
+
+        <!-- PDF DOWNLOAD BUTTON -->
+        <a class="download-btn" href="eg.pdf" download>Download PDF</a>
+
+    </div>
+
+    <!-- TYPING SCRIPT -->
+    <script>
+        const topics = [
+            "C++",
+            "Java",
+            "Python",
+            "C",
+            "HTML, CSS, JavaScript",
+            "Cybersecurity",
+            "DSA",
+            "Everything in Coding!"
+        ];
+
+        let i = 0;
+        let j = 0;
+        let current = "";
+        let isDeleting = false;
+
+        function type() {
+            const display = document.getElementById("changing");
+
+            if (!isDeleting) {
+                current = topics[i].substring(0, j++);
+            } else {
+                current = topics[i].substring(0, j--);
+            }
+
+            display.textContent = current;
+
+            if (!isDeleting && j === topics[i].length + 1) {
+                isDeleting = true;
+                setTimeout(type, 700);
+                return;
+            }
+
+            if (isDeleting && j === 0) {
+                isDeleting = false;
+                i++;
+                if (i >= topics.length) i = 0;
+            }
+
+            setTimeout(type, isDeleting ? 80 : 120);
+        }
+
+        type();
+    </script>
+
+</body>
+</html>
